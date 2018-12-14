@@ -16,4 +16,26 @@
 
 
 /* Column Styles */
+/* here the elements in the article are separated and have a gap and a divniding line.  */
+article {
+    -moz-column-width: 260px;
+    -webkit-column-width: 260px;
+    column-width: 260px;
 
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+
+    column-rule: 1px solid rgb(154, 62, 31);
+
+    widows: 2;
+    orphans: 2;
+}
+
+
+/* This mkaes the h1 that titles the paragraphs title the whole articel instead of just in the onr column. */
+article h1 {
+    -moz-column-span: all; 
+    -webkit-column-span: all;
+    column-span: all;
+}

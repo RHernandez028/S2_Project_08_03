@@ -18,7 +18,7 @@
    ===============================
 */
 @media only screen and (max-width: 640px) {
-
+/* This is to make the mobile layout into a single column. */
     table,
     tbody,
     tr,
@@ -28,17 +28,20 @@
         display: block;
     }
 
+    /* this gets ride of the to elements because it is not neseccary and make the site harder to read on mobile screens. */
     thead,
     h1 {
         display: none;
     }
 
+    /* this makes the capotion look more like a title for the table(calendar). */
     caption {
         background: gray;
         font-size: 1.5em;
         line-height: 2em;
     }
 
+    /* the next three Styles make the days on the clendar look better and colorto hte odd days of the month. */
     td {
         border: 1px solid gray;
         color: rgb(11, 12, 145);
@@ -68,6 +71,7 @@
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
+/* here the styles for screens bigger than 641px have and added image in the table's background and makes the borders of the cells share some of the same rules and styles. */
 @media only screen and (min-width: 641px) {
     table {
         background: url(lht_photo1.png) no-repeat bottom right;
@@ -91,6 +95,8 @@
         background: rgba(171, 171, 171, .6);
         color: rgb(11, 12, 145);
     }
+
+    /* Using the data-date sttribute make all the attributes that start with 'Feb' have the rules that make the days of feb stnad out compared to the other days from the next and prevois month. */
     td[data-date*="Feb"] {
         background:  rgba(232, 214, 148, 0.6);
         box-shadow: inset gray 0px 0px 20px;
